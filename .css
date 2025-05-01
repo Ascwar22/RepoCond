@@ -1,0 +1,89 @@
+/* Reset dei margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenitore principale */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Input e bottone */
+#todo-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background-color: #45a049;
+}
+
+/* Lista delle attività */
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Stile per gli elementi della lista */
+.todo-item {
+    background-color: #fafafa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Bottone di eliminazione */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
